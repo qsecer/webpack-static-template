@@ -1,57 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>!!!</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
 <body>
-     <header class="header">
-            <div class="header__left-side">
-                <button class="header__img button-burger" id="button-burger" alt="Открыть меню"></button>
-                <img class="header__img Group mini-screen" src="img/Group.svg">
-            </div>
-            <div class="header__right-side">
-                <button class="header__img call" src="img/call.svg" alt="Позвонить"></button>
-                <button class="header__img chat" src="img/chat.svg" alt="Открыть чат"></button>
-                <button class="header__img profile" src="img/profile.svg" alt="Открыть профиль"></button>
-                <button class="header__img repair" src="img/repair.svg" alt="Оставить заявку"></button>
-                <button class="header__img checkstatus" src="img/checkstatus.svg" alt=" Узнать статус ремонта"></button>
-            </div>
-        </header>
+<header class="header">
+  <div class="header__left-side">
+    <button class="header__img button-burger" id="button-burger" alt="Открыть меню"></button>
+    <img class="header__img Group mini-screen" src="img/Group.svg">
+  </div>
+  <div class="header__right-side">
+    <button class="header__img call" src="./img/call.svg" alt="Позвонить" ></button>
+    <button class="header__img chat" src="img/chat.svg" alt="Открыть чат"></button>
+    <button class="header__img profile" src="img/profile.svg" alt="Открыть профиль"></button>
+    <button class="header__img repair" src="img/repair.svg" alt="Оставить заявку"></button>
+    <button class="header__img checkstatus" src="img/checkstatus.svg" alt=" Узнать статус ремонта"></button>
+  </div>
+</header>
 
-        
+<main class="main">
+  <h1 class="main__h1">Услуги и сервисы</h1>
+  <nav class="nav">
+    <ul class ="nav__list">
+      <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые устройства </a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Дополнительные услуги</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Цены на услуги</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Специальные цены</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Адреса сервисных центров</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+    </ul>
+  </nav>
+  <section class="main__section">
+    <div class="main__text">
+      <p class="main__paragraf">
+        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<hr>
+      <span class="parag--hidden-on-phone">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="parag--hidden-on-tablet">,что подтверждает большое количество постоянных клиентов.
+                               Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></span>
+      </p>
+      <label class="section__label">
+        <button class="section__button" ></button>
+        <p>Читать далее</p>
+      </label>
+    </div>
+    <img  class="main__img" src="img/Picture%20Copy.jpg" >
+  </section>
+
+  <h2 class="main__h2">Ремонт техники различных брендов</h2>
+  <div class="swiper" id="swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><img class="swiper-image" src="img/Lenovo.png" alt="Lenovo"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/Samsung.png" alt="Samsung"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/Apple.png" alt="Apple"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/ViewSonic.png" alt="ViewSonic"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/BOSH.png" alt="BOSH"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/HP.png" alt="HP"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/Acer.png" alt="Sony"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/Sony.png" alt="Lenovo"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/Samsung.png" alt="Samsung"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+      <div class="swiper-slide"><img class="swiper-image" src="img/Apple.png" alt="Apple"/><img class="swiper-go-brand" src="img/go.svg"/></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+  <div class="brand-table">
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/Lenovo.png" alt="Lenovo"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/Samsung.png" alt="Samsung"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/Apple.png" alt="Apple"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/ViewSonic.png" alt="ViewSonic"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/BOSH.png" alt="BOSH"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/HP.png" alt="HP"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/Acer.png" alt="Lenovo"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/Sony.png" alt="Bosh"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/Lenovo.png" alt="Samsung"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/Samsung.png" alt="Samsung"/><img class="brand-table-go" src="img/go.svg"/></div>
+    <div class="brand-table-item" ><img class="brand-table-image" src="img/Apple.png" alt="Apple"/><img class="brand-table-go" src="img/go.svg"/></div>
+  </div>
+  <button class="brand-table-button show-more">Показать больше</button>
+
+</main>
 
 
-        <main class="main">
-            <h1 class="main__h1">Услуги и сервисы</h1>
-           <nav class="nav">
-               <ul class ="nav__list">
-                   <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые устройства </a></li>
-                   <li class="nav__item"><a class="nav__link" href="#">Дополнительные услуги</a></li>
-                   <li class="nav__item"><a class="nav__link" href="#">Цены на услуги</a></li>
-                   <li class="nav__item"><a class="nav__link" href="#">Специальные цены</a></li>
-                   <li class="nav__item"><a class="nav__link" href="#">Адреса сервисных центров</a></li>
-                   <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-               </ul>
-           </nav>
-           <section class="main__section">
-               <div class="main__text">
-                   <p class="main__paragraf">
-                       Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<hr>
-                       <span class="parag--hidden-on-phone">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="parag--hidden-on-tablet">,что подтверждает большое количество постоянных клиентов.
-                           Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></span>
-                   </p>
-                    <label class="section__label">
-                        <button class="section__button" ></button>
-                        <p>Читать далее</p>
-                    </label>
-               </div>
-               <img  class="main__img" src="img/Picture%20Copy.jpg" >
-           </section>
-       </main>
-    <script src="script.js"></script>
+<script type="" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="./src/js/index.js"></script>
 </body>
-
 </html>
